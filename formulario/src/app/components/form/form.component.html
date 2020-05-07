@@ -1,0 +1,78 @@
+<br><mat-card class="formCard">
+     <mat-card-actions>
+            <button mat-icon-button mat-raised-button (click)="cerrar()" class="cerrar"> 
+                <mat-icon id="cerrar">close </mat-icon>
+            </button>
+        </mat-card-actions>
+    <mat-card-title id="cardTitle">Formulario Contacto</mat-card-title>
+    
+    <mat-card-content class="matContent">
+    
+        <div class="formularioContactos">
+            <form #form="ngForm">
+
+            <mat-form-field class="field">              
+                <span> *Nombre: </span>
+                <input matInput name="nombre" minlength="3" [(ngModel)]="nombre" class="ffield" required>
+                <mat-hint class="hint">Obligatorio. Debe contener al menos 3 caracteres (no acepta números).</mat-hint>
+            </mat-form-field><br>
+               
+            <mat-form-field class="field"> 
+                <span> *Apellidos: </span>
+                <input matInput name="apellidos" minlength="3" [(ngModel)]="apellidos" class="ffield" required>
+                <mat-hint class="hint">Obligatorio. Debe contener al menos 3 caracteres (no acepta números).</mat-hint>
+            </mat-form-field><br>
+
+            <mat-form-field class="field">
+                <span> *Edad: </span>
+                <input matInput name="edad" min="0" max="125" [(ngModel)]="edad" class="ffield" required>
+                <mat-hint class="hint">Obligatorio. Debe ser un número de 0 a 125.</mat-hint>
+            </mat-form-field><br>
+
+            <mat-form-field class="field">
+                <span> *DNI: </span>
+                <input matInput name="dni" minlength="9" maxlength="9" [(ngModel)]="dni" class="ffield" required>
+                <mat-hint class="hint">Obligatorio. Debe contener 9 caracteres.</mat-hint>
+            </mat-form-field><br>
+
+            <mat-form-field class="field">
+                <span>*Fecha de nacimiento: </span>
+                <input matInput [matDatepicker]="picker" name="cumple" [(ngModel)]="cumple" class="ffield" required>
+                <mat-datepicker-toggle id="dateToggle"  matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                <mat-hint class="hint">Obligatorio.</mat-hint>
+                
+            </mat-form-field><br>
+
+            <mat-form-field class="field">
+                <span> *Color favorito: </span>
+                <input matInput name="color" id="color" minlength="3"  [(ngModel)]="color" class="ffield" required>
+                <mat-hint class="hint">Obligatorio. Debe ser 1 sola palabra de al menos 3 caracteres.</mat-hint>
+            </mat-form-field><br>
+
+            <mat-form-field class="sex" >
+                <span> *Sexo: </span><br><br>
+                <mat-select name="sexo" [(value)]="sexo" class="sexo" required><br>
+                    <mat-option value="Hombre" class="sexo">Hombre</mat-option><br>
+                    <mat-option value="Mujer" class="sexo">Mujer</mat-option><br>
+                    <mat-option value="Otro" class="sexo">Otro</mat-option><br>
+                    <mat-option value="No especificado" class="sexo">No especificado</mat-option><br>
+                </mat-select> 
+                <mat-hint class="hint">Obligatorio.</mat-hint>
+            </mat-form-field><br>
+            
+            <mat-form-field class="field">
+                <span> Notas: </span>
+                <input matInput name="notas" [(ngModel)]="notas" class="ffield"> 
+            </mat-form-field><br>
+
+            <mat-divider></mat-divider><br>
+            <div class="envio">
+                <button mat-icon-button mat-raised-button type="submit" (click)="onSubmit()" class="enviar" [disabled]="form.form.invalid">
+                        <mat-icon id="enviar">done_outline</mat-icon>
+                </button>
+            </div>
+           </form>
+        </div>
+    </mat-card-content>
+</mat-card>

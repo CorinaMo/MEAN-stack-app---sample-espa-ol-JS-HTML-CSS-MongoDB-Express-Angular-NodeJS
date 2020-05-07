@@ -1,0 +1,101 @@
+.formCard {
+    display: wrap;
+    width: inherit;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+    vertical-align: middle;
+    align-content: center;
+    box-shadow: 1vw solid #E91E63;
+    box-shadow: 10px 10px 0px 0px #90CAF9;
+
+  }
+
+.formularioContactos{
+    width: 85%;
+    padding-left: 15%;
+}
+.matContent{
+    font-family: 'Indie Flower', cursive;
+
+}
+#cardTitle{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    background-color: #2196F3;
+    color: white;
+}
+span{
+    font-family: 'Indie Flower';
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 1vw;
+    background-color: #1E88E5;
+    color: white;
+    box-shadow: 10px 10px 0px 0px #90CAF9;
+
+}
+.ffield{
+    margin-top: 1vw;
+    border: 1px solid #90CAF9;
+    font-size: x-large;
+
+}
+.sex{
+    margin-bottom:1vw;
+}
+.sexo{
+    font-size: x-large;
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+}
+.field{
+    font-family: 'Indie Flower', cursive;
+    padding: 0;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    width: 60%;
+}  
+
+.cerrar{
+    color: white;
+    background-color:#E91E63;
+    border: 2px solid #E91E63;
+    border-radius: 4vw;
+}
+.cerrar:hover{
+    color: #E91E63;
+    border: 2px solid #E91E63;
+    background-color: white;
+}
+
+.enviar{
+    color: white;
+    background-color: #76FF03;
+    border: 2px solid #76FF03;
+ 
+}
+.enviar:hover{
+    color: #76FF03;
+    border: 2px solid #76FF03;
+    background-color: white;
+}
+.envio{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 35%;
+    margin-right: 65%;
+    transform: scale(2);
+    position: inherit;
+}
+.hint{
+    color: #4A148C;
+    font-size: medium;
+    font-family: 'Roboto';
+}
+#dateToggle{
+    font-size: xx-large;
+    color: #E91E63
+}

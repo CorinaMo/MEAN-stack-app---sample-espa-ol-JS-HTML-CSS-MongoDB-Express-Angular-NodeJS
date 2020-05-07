@@ -1,0 +1,36 @@
+<button mat-icon-button mat-raised-button id="newPerson" (click)="nuevoContacto()">
+        <mat-icon>person_add</mat-icon>
+</button>
+        
+<div class="marco">
+    <div class="listaContactos" *ngFor="let user of usersData">  
+        <mat-card class="contactCard">
+            
+            <mat-card-title class="cardTitle">{{user.nombre}} {{user.apellidos}} </mat-card-title>
+            <mat-card-content class="cardContent">
+                <mat-list >
+                    <mat-list-item class="lista">
+                        <p matLine><b>Nombre: </b>{{user.nombre}} <br/> </p>
+                        <p matLine><b>Apellidos: </b>{{user.apellidos}}</p><br/>
+                        <p matLine><b>Edad: </b>{{user.edad}}</p><br/>
+                        <p matLine><b>Dni: </b>{{user.dni}}</p><br/>
+                        <p matLine><b>Cumpleaños: </b>{{user.cumple}}</p><br/>
+                        <p matLine><b>Color Favorito: </b>{{user.color}}</p><br/>
+                        <p matLine><b>Sexo: </b>{{user.sexo}}</p><br/>
+                        <p matLine><b>Notas: </b>{{user.notas}}</p><br/>
+
+                    </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+
+            <mat-card-actions class="cardbuttons">
+                <button mat-icon-button mat-raised-button class="update" (click)="actualizarContacto(user._id)">
+                    <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button mat-raised-button class="delete" (click)="borrarContacto(user._id)">
+                    <mat-icon>delete</mat-icon>
+            </button>                             
+            </mat-card-actions>   <br> 
+        </mat-card>
+    </div>  
+</div>

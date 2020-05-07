@@ -1,4 +1,4 @@
-# MEAN-stack-app---sample-espa-ol-JS-HTML-CSS-MongoDB-Express-Angular-NodeJS
+# MEAN-stack-app---sample-espa-ol-JS-Typescript-HTML-CSS-MongoDB-Express-Angular-NodeJS
 
 LAST UPDATE: Diciembre 2019
 

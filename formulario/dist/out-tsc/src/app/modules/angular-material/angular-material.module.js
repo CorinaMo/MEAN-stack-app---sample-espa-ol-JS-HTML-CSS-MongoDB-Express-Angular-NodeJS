@@ -1,0 +1,85 @@
+import * as tslib_1 from "tslib";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MatAutocompleteModule, MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule, MatDialogModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatIconModule, MatInputModule, MatListModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule, MatSelectModule, MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule, MatStepperModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatBadgeModule, MatTreeModule, MatBottomSheetModule, } from '@angular/material';
+let AngularMaterialModule = class AngularMaterialModule {
+};
+AngularMaterialModule = tslib_1.__decorate([
+    NgModule({
+        declarations: [],
+        imports: [
+            CommonModule,
+            MatAutocompleteModule,
+            MatButtonModule,
+            MatButtonToggleModule,
+            MatCardModule,
+            MatCheckboxModule,
+            MatChipsModule,
+            MatTableModule,
+            MatDatepickerModule,
+            MatDialogModule,
+            MatExpansionModule,
+            MatFormFieldModule,
+            MatGridListModule,
+            MatIconModule,
+            MatInputModule,
+            MatListModule,
+            MatMenuModule,
+            MatPaginatorModule,
+            MatProgressBarModule,
+            MatProgressSpinnerModule,
+            MatRadioModule,
+            MatRippleModule,
+            MatSelectModule,
+            MatSidenavModule,
+            MatSlideToggleModule,
+            MatSliderModule,
+            MatSnackBarModule,
+            MatSortModule,
+            MatStepperModule,
+            MatTabsModule,
+            MatToolbarModule,
+            MatTooltipModule,
+            MatNativeDateModule,
+        ],
+        exports: [
+            MatAutocompleteModule,
+            MatButtonModule,
+            MatButtonToggleModule,
+            MatCardModule,
+            MatCheckboxModule,
+            MatChipsModule,
+            MatTableModule,
+            MatDatepickerModule,
+            MatDialogModule,
+            MatExpansionModule,
+            MatFormFieldModule,
+            MatGridListModule,
+            MatIconModule,
+            MatInputModule,
+            MatListModule,
+            MatMenuModule,
+            MatPaginatorModule,
+            MatProgressBarModule,
+            MatProgressSpinnerModule,
+            MatRadioModule,
+            MatRippleModule,
+            MatSelectModule,
+            MatSidenavModule,
+            MatSlideToggleModule,
+            MatSliderModule,
+            MatSnackBarModule,
+            MatSortModule,
+            MatStepperModule,
+            MatTabsModule,
+            MatToolbarModule,
+            MatTooltipModule,
+            MatNativeDateModule,
+            MatBadgeModule,
+            MatTreeModule,
+            MatBottomSheetModule
+        ]
+    })
+], AngularMaterialModule);
+export { AngularMaterialModule };
+//# sourceMappingURL=angular-material.module.js.map

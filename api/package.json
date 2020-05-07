@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "nodemon.start": "nodemon ./bin/www",
+    "start.debug": "SET DEBUG=formulario-app-svc:* & npm start"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "debug": "^2.6.9",
+    "express": "^4.17.1",
+    "express-validator": "^6.3.0",
+    "mongod": "^2.0.0",
+    "mongodb": "^3.3.5",
+    "mongoose": "^5.7.13",
+    "morgan": "^1.9.1",
+    "stringify": "^5.2.0"
+  },
+  "main": "app.js",
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
